@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.App {
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.Header {
+  font-size: 0.95rem;
+  color: #4b5563;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.Calculator {
+  width: 320px;
+  margin: auto;
+  background: #334155;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.Display {
+  height: 60px;
+  font-size: 2.2rem;
+  padding: 0 16px;
+  text-align: right;
+  background: #0f172a;
+  color: #ffffff;
+  border: 1px solid #475569;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 12px;
+}
+
+.Keypad {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.Button, .ClrButton, .EqualButton {
+  height: 52px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: opacity 0.15s ease, transform 0.05s ease;
+}
+
+.Button:active, .ClrButton:active, .EqualButton:active {
+  transform: scale(0.97);
+}
+
+.Button {
+  background-color: #2563eb;
+  color: #ffffff;
+}
+
+.Button:hover {
+  background-color: #1d4ed8;
+}
+
+.ClrButton {
+  background-color: #dc2626;
+  color: #ffffff;
+}
+
+.ClrButton:hover {
+  background-color: #b91c1c;
+}
+
+.EqualButton {
+  background-color: #16a34a;
+  color: #ffffff;
+}
+
+.EqualButton:hover {
+  background-color: #15803d;
+}

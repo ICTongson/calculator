@@ -1,0 +1,69 @@
+/* 1. Use a more intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 2. Prevent font size inflation & set modern text rendering */
+html {
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 3. Ensure full height, modern default font family, and accessible line height */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background-color: #ffffff;
+  color: #1a1a1a;
+}
+
+/* 4. Vite React Root Setup */
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 5. Modern image and media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form inputs */
+input, button, textarea, select {
+  font: inherit;
+  color: inherit;
+}
+
+/* 7. Remove list styles where classes are present (keeps plain lists intact) */
+ul[class], ol[class] {
+  list-style: none;
+}
+
+/* 8. Avoid text overflow and balance headings */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/* 9. Remove default button styles for easier custom styling */
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* 10. Anchor tag defaults */
+a {
+  color: inherit;
+  text-decoration: none;
+}
